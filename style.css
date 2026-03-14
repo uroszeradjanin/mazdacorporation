@@ -1,0 +1,189 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#899aa5;
+}
+
+header{
+position:fixed;
+width: 97%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+padding:20px 40px;
+color:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:larger;
+font-weight:bold;
+}
+
+.logo img{
+width:45px;
+margin-right:10px;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:red;
+}
+
+section{
+    padding:90px;
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    color :black;
+}
+a:hover{
+    color: red;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-size: 130%;
+}
+.hero{
+    background:#899aa5;
+    padding:60px;
+}
+.kodo img{
+    cursor:pointer;
+transition:0.3s;
+padding: 10px;
+}
+
+.kodo img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:10px;
+}
+
+.auto{
+    background:rgb(255, 253, 253);
+    margin:20px auto;
+    padding:20px;
+    width:550px;
+    border-radius:10px;
+    text-align:center;
+
+}
+.auto img{
+    width:100%;
+    border-radius:10px;
+    cursor:pointer;
+transition:0.3s;
+
+}
+.auto img:hover{
+    transform:scale(1.05);
+}
+
+
+.mapa{
+display: flex;
+justify-content:center;
+margin:20px;
+border-color: black;
+
+}
+
+.kontakt{
+text-align:center;
+background:rgb(255, 255, 255);
+padding:44px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.kontakt button{
+padding:12px 25px;
+background:red;
+color:white;
+border: #111;
+cursor:pointer;
+border-radius:5px;
+}
+
+.kontakt button:hover{
+background:darkred;
+}
+.forma{
+text-align:center;
+padding:90px;
+}
+
+form{
+background:white;
+padding:30px;
+width: 700px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select{
+width:100%;
+padding:8px;
+margin-top:5px;
+}
+
+button{
+padding:10px 20px;
+background:red;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:darkred;
+}
+textarea{
+width:100%;
+height:80px;
+padding:8px;
+}
+
+.galerija{
+text-align:center;
+padding:60px;
+background:white;
+}
+
+.galerija-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.galerija-grid img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.galerija-grid img:hover{
+transform:scale(1.05);
+}

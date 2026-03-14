@@ -1,0 +1,50 @@
+function kontaktPoruka(){
+
+let ime = document.getElementById("ime").value;
+let email = document.getElementById("email").value;
+let tip = document.getElementById("tip").value;
+let model = document.getElementById("model").value;
+let gorivo = document.getElementById("gorivo").value;
+let konjaza = document.getElementById("konjaza").value;
+let kubikaza = document.getElementById("kubikaza").value;
+let datum = document.getElementById("datum").value;
+
+let poruka = document.getElementById("poruka");
+
+if(
+ime === "" ||
+email === "" ||
+tip === "" ||
+model === "" ||
+gorivo === "" ||
+konjaza === "" ||
+kubikaza === "" ||
+datum === ""
+){
+
+poruka.innerHTML = "Niste popunili sva polja!";
+poruka.style.background = "red";
+poruka.style.color = "white";
+poruka.style.padding = "10px";
+poruka.style.borderRadius = "5px";
+
+}
+else if(!email.includes("@gmail.com") ||  email.startsWith("@") || email.endsWith("@") || email.startsWith(".") || email.endsWith(".")){
+
+poruka.innerHTML = "Unesite ispravan email!";
+poruka.style.background = "red";
+poruka.style.color = "white";
+poruka.style.padding = "10px";
+poruka.style.borderRadius = "5px";
+}
+else{
+
+poruka.innerHTML = "Hvala na informacijama!";
+poruka.style.background = "green";
+poruka.style.color = "white";
+poruka.style.padding = "10px";
+poruka.style.borderRadius = "5px";
+
+}
+
+}

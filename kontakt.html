@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Izbor vozila</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+<header>
+<div class="logo">
+<img src="c:\Mazda\slike\Mazda-Logo.png" alt="Mazda logo">
+<span>Mazda</span>
+</div>
+
+<nav>
+<a href="index.html">Mazda</a>
+<a href="modeli.html">Modeli</a>
+<a href="prodavnice.html">Prodaja</a>
+</nav>
+</header>
+
+
+<section class="forma">
+
+<h2>Izaberite vozilo</h2>
+
+<form>
+
+<label>Model vozila:</label>
+<select id="model">
+<option value="">Izaberite model</option>
+<option>Mazda 3</option>
+<option>Mazda 6</option>
+<option>Mazda CX-5</option>
+<option>Mazda CX-30</option>
+<option>Mazda MX-5</option>
+<option>Mazda RX-7</option>
+</select>
+
+<br><br>
+<section class="galerija">
+
+<h2>Galerija Mazda automobila</h2>
+
+<div class="galerija-grid">
+
+<img src="c:\Mazda\slike\mazda3.avif" alt="Mazda 3" title="Mazda3">
+<img src="c:\Mazda\slike\2022-mazda-6-sedan-review-jerry-perez-26.webp" alt="Mazda 6" title="Mazda6">
+<img src="c:\Mazda\slike\mazda_cx-5_spain_src_act_03.jpg" alt="Mazda CX-5" title="MazdaCX-5">
+<img src="c:\Mazda\slike\Mazda-CX-30.jpg" alt="Mazda CX-30" title="MazdaCX-30">
+<img src="c:\Mazda\slike\mazdamx5prava.jpg" alt="Mazda MX-5" title="MazdaMX-5">
+<img src="c:\Mazda\slike\mazdarx7.jpg" alt="Mazda RX-7" title="MazdaRX-7">
+
+</div>
+</section>
+
+
+
+
+
+<label>Vrsta goriva:</label>
+<select id="gorivo">
+<option value="">Izaberite gorivo</option>
+<option>Benzin</option>
+<option>Dizel</option>
+<option>Hibrid</option>
+</select>
+
+<br><br>
+
+<label>Konjaža (KS):</label>
+<select id="konjaza">
+<option value="">Izaberite konjažu</option>
+<option>109ks</option>
+<option>122ks</option>
+<option>143ks</option>
+<option>188ks</option>
+<option>237ks</option>
+<option>250ks</option>
+<option>310ks</option>
+<option>360ks</option>
+<option>400ks</option>
+<option>450ks</option>
+</select>
+
+<br><br>
+
+<label>Kubikaža (cc):</label>
+<select id="kubikaza">
+<option value="">Izaberite kubikažu</option>
+<option>1298cc</option>
+<option>1496cc</option>
+<option>1759cc</option>
+<option>1998cc</option>
+<option>2191cc</option>
+<option>2488cc</option>
+<option>2979cc</option>
+<option>3283cc</option>
+<option>3727cc</option>
+
+</select>
+<br><br>
+<label>Ime i prezime:</label>
+<input type="text" id="ime">
+
+<br><br>
+
+<label>Email:</label>
+<input type="email" id="email">
+
+<br><br>
+<label>Tip vozila:</label>
+<select id="tip">
+<option value="">Izaberite tip</option>
+<option>Limuzina</option>
+<option>SUV</option>
+<option>Hatchback</option>
+<option>Sportski</option>
+</select>
+
+<br><br>
+
+<label>Datum test vožnje:</label>
+<input type="date" id="datum">
+
+<br><br>
+<label>Dodatna poruka:</label>
+<textarea placeholder="Vaša pitanja ili želje"></textarea>
+
+<br><br>
+<button type="button" onclick="kontaktPoruka()">Pošalji upit</button>
+<p id="poruka"></p>
+</form>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
