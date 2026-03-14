@@ -29,7 +29,7 @@ poruka.style.padding = "10px";
 poruka.style.borderRadius = "5px";
 
 }
-else if(!email.includes("@gmail.com") ||  email.startsWith("@") || email.endsWith("@") || email.startsWith(".") || email.endsWith(".")){
+else if(!email.includes("@gmail.com") ){
 
 poruka.innerHTML = "Unesite ispravan email!";
 poruka.style.background = "red";
@@ -39,11 +39,11 @@ poruka.style.borderRadius = "5px";
 }
 else{
 
-poruka.innerHTML = "Hvala na informacijama!";
-poruka.style.background = "green";
-poruka.style.color = "white";
-poruka.style.padding = "10px";
-poruka.style.borderRadius = "5px";
+window.location.href =
+"uspesno.html?model=" + model +
+"&gorivo=" + gorivo +
+"&konjaza=" + konjaza +
+"&kubikaza=" + kubikaza;
 
 }
 
