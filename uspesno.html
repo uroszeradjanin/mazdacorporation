@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Upit poslat</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.kartica{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+text-align:center;
+width:420px;
+}
+
+.kartica img{
+width:100%;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.info{
+text-align:left;
+margin-top:15px;
+}
+
+a{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#d6001c;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+a:hover{
+background:#a30015;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="kartica">
+
+<h1>✔ Upit uspešno poslat!</h1>
+
+<img id="slikaAuta">
+
+<h2 id="modelNaziv"></h2>
+
+<div class="info">
+<p><b>Gorivo:</b> <span id="gorivo"></span></p>
+<p><b>Konjaža:</b> <span id="konjaza"></span></p>
+<p><b>Kubikaža:</b> <span id="kubikaza"></span></p>
+</div>
+
+<a href="index.html">Nazad na početnu</a>
+
+</div>
+
+<script>
+
+let param = new URLSearchParams(window.location.search);
+
+let model = param.get("model");
+let gorivo = param.get("gorivo");
+let konjaza = param.get("konjaza");
+let kubikaza = param.get("kubikaza");
+
+document.getElementById("modelNaziv").innerText = model;
+document.getElementById("gorivo").innerText = gorivo;
+document.getElementById("konjaza").innerText = konjaza;
+document.getElementById("kubikaza").innerText = kubikaza;
+
+let slika = document.getElementById("slikaAuta");
+
+if(model === "Mazda 3"){
+slika.src = "slike/2007-Mazda3-02.webp";
+}
+
+else if(model === "Mazda CX-5"){
+slika.src = "slike/cx5.jpg";
+}
+
+else if(model === "Mazda MX-5"){
+slika.src = "slike/mazdaMX55.webp";
+}
+
+else if(model === "Mazda 6"){
+slika.src = "slike/mazda6.jpg";
+}
+else if(model === "Mazda CX-30"){
+    slika.src = "slike/Screenshot_2026-02-26_at_3.26.16PM.webp"
+}
+else if(model === "Mazda RX-7"){
+    slika.src = "slike/mazdarx7.jpg";
+}
+
+
+
+</script>
+
+</body>
+</html>
