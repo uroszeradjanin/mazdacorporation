@@ -22,20 +22,12 @@ kubikaza === "" ||
 datum === ""
 ){
 
-poruka.innerHTML = "Niste popunili sva polja!";
-poruka.style.background = "red";
-poruka.style.color = "white";
-poruka.style.padding = "10px";
-poruka.style.borderRadius = "5px";
+alert("Molimo popunite sva polja!");
 
 }
 else if(!email.includes("@gmail.com") ){
 
-poruka.innerHTML = "Unesite ispravan email!";
-poruka.style.background = "red";
-poruka.style.color = "white";
-poruka.style.padding = "10px";
-poruka.style.borderRadius = "5px";
+alert("Molimo unesite validan email!"
 }
 else{
 
