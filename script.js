@@ -9,7 +9,7 @@ let konjaza = document.getElementById("konjaza").value;
 let kubikaza = document.getElementById("kubikaza").value;
 let datum = document.getElementById("datum").value;
 
-
+let poruka = document.getElementById("poruka");
 
 if(
 ime === "" ||
@@ -22,12 +22,22 @@ kubikaza === "" ||
 datum === ""
 ){
 
-alert("Molimo popunite sva polja!");
+poruka.innerHTML = "Niste popunili sva polja!"; 
+poruka.style.background = "red"; 
+poruka.style.color = "white"; 
+poruka.style.padding = "10px"; 
+poruka.style.borderRadius = "5px";
+
 
 }
 else if(!email.includes("@gmail.com") ){
 
-alert("Molimo unesite validan email!"
+
+poruka.innerHTML = "niste uneli validan email!";
+poruka.style.background = "red";
+poruka.style.color = "white";
+poruka.style.padding = "10px";
+poruka.style.borderRadius = "5px";
 }
 else{
 
