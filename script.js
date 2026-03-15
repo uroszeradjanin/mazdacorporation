@@ -9,7 +9,7 @@ let konjaza = document.getElementById("konjaza").value;
 let kubikaza = document.getElementById("kubikaza").value;
 let datum = document.getElementById("datum").value;
 
-let poruka = document.getElementById("poruka");
+
 
 if(
 ime === "" ||
